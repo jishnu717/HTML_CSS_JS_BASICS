@@ -1,0 +1,125 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Basic4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+header,footer
+        {
+            background-image: url("gr5.jpg");
+            color:black;
+            font-size: 40px;
+            font-family: cursive;
+            text-align:center;
+        }
+div
+
+        {
+            background-color: antiquewhite;
+            color:dodgerblue;
+            text-align: center;
+            width:auto;
+            height:100px;
+
+        }
+   div:hover
+   {
+       background-color: aqua;
+   } 
+   body
+   {
+       background-image: url("gr8.jpg");
+
+   } 
+   h2
+   {
+       font-family: cursive;
+       color:black;
+
+   } 
+   p.num1
+   {
+       display:none;
+       background-color: yellow;
+       font-family: Courier New, Courier, monospace;
+
+
+   }  
+   div:hover p
+   {
+       display:block;
+
+   }
+   input:focus
+   {
+       background-color:burlywood;
+
+   }
+   .c1
+   {
+       background-color: beige;
+   }
+
+   pre::first-line
+   {
+       color:red;
+       font-variant: small-caps;
+   }
+   p.into::first-letter
+   {
+       color:blue;
+       font-size:50px;
+   }
+   p.into::first-line
+   {
+       color:red;
+       font-size:30px;
+   }
+   img
+   {
+       opacity:1.0;
+
+   }
+   img:hover
+   {
+       opacity:0.5;
+
+   }
+
+
+
+</style>
+</head>
+<body>
+
+    <header>CSS Basics</header>
+    <h2 >Example for pseudo-class</h2>
+    <div><h2>Mouse Over Me</h2></div>
+    <h2>Tooltip Hover</h2>
+    <div><h2>Click here</h2>
+    <p class="num1">here i am</p>
+</div> 
+<br><br>
+<div class="c1">
+
+FirstName:<input type="text" name="fname"><br>
+Lastname:<input type="text" name="lname"><br>
+</div>
+<br><br>
+<h2>Example for pseudo element</h2>
+<pre>#grad { background: linear-gradient(to right, red , yellow); }. Try it Yourself ». Linear Gradient -
+    Diagonal. You can make a gradient diagonally by specifying both the horizontal and vertical starting positions. 
+    The following examplshows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning .</pre>
+<br><br>
+
+<h2>Example for multiple pseudo</h2>
+<p class="into">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text </p>
+  <h2>Example of Opacity</h2>
+  <img src="tree.jpg" width="200px" height="200px"/>  
+    
+</body>
+</html>
