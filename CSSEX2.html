@@ -1,0 +1,139 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+    .overflow
+    {
+        background-color: aqua;
+        color:black;
+        width:500px;
+        height:100px;
+        overflow:scroll;
+        border:1px solid grey;
+        margin:10px;
+
+
+    }
+    .overflow1
+    {
+        background-color: beige;
+        width:500px;
+        height:50px;
+        overflow:visible;
+    }
+    .overflow2
+    {
+        background-color:darkgrey;
+        color:black;
+        width:500px;
+        height:80px;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        border:1px solid grey;
+        margin:10px;
+        top:600px;
+
+    }
+    header,footer
+        {
+            background-image: url("gr2.jpg");
+            color:black;
+            font-size: 40px;
+            font-family: cursive;
+            text-align:center;
+            
+        }
+        body
+        {
+            background-image: url("gr3.jpg");
+            
+        }
+     h3
+     {
+         font-family: Arial, Helvetica, sans-serif;
+         color:white;
+
+     }
+     .img
+     {
+         float:left;
+     }
+     .img1
+     {
+         float:right;
+         height:100px;
+         width:100px;
+     }
+     #clear
+     {
+         border:3px solid red;
+         padding:5 px;
+
+     }
+     .clearfix
+     {
+         overflow: auto;
+         height:100px;
+     }
+
+    </style>
+</head>
+<body>
+    <header>CSS Basics</header>
+    <h3 >Paragraph with scroll bar</h3>
+    <div class="overflow">People start cleaning their houses few days before the main date 
+        of Diwali such as white washing, dusting, painting, etc. Houses 
+        get decorated using real or artificial flowers and other decorative
+         materials. Everywhere looks very dazzling because of the lighting smal
+         l earthen lamps and electric bulbs. It is considered that Goddess Lakshmi
+          makes a visit to each houses in the night of Diwali that’s why everyone 
+          lights their houses to welcome the Goddess. In return, Goddess gives her
+           blessings to her devotees for healthy and prosperous life. At this day, everyone performs puja of
+         Goddess Lakshmi and God Ganesha and then distributes gifts and sweets to their
+          friends, neighbors and relatives.</div>
+          <h3>Paragraph With visible property</h3>
+          <div class="overflow1">People start cleaning their houses few days before the
+               main dateof Diwali such as white washing, dusting, painting, etc. Houses 
+                get decorated using real or artificial flowers and other decorative
+                 materials. Everywhere looks very dazzling because of the lighting smal
+                 l earthen lamps and electric bulbs. It is considered that Goddess Lakshmi
+                  makes a visit to each houses in the night of Diwali that’s why everyone </div><br><br><br>
+          <h3>Overflow with X and Y values</h3>
+                  <div class="overflow2">People start cleaning their houses few days before the
+              main dateof Diwali such as white washing, dusting, painting, etc. Houses 
+               get decorated using real or artificial flowers and other decorative
+                materials. Everywhere looks very dazzling because of the lighting smal
+               l earthen lamps and electric bulbs. It is considered that Goddess Lakshmi
+               makes a visit to each houses in the night of Diwali that’s why everyone 
+            </div>   
+   
+   <div>
+    <h2 style="background-color: beige;color:black;text-align:center;font-size:20px;height:50px;">Floating Properties</h2>
+
+    <h3>Image on Left Side</h3>
+    <img class="img" src="tree.jpg" width="100px" height="80px"/>
+    <br><br><br><br><br><br>
+</div>
+
+
+
+<div id="clear">
+    <div class="clearfix">
+        <img class="img1" src="tree.jpg" width="100px" height:"200px">Added the clear fix,People start cleaning their houses few days before the
+        main dateof Diwali such as white washing, dusting, painting, etc. Houses 
+         get decorated using real or artificial flowers and other decorative
+    </div>
+
+</div> 
+</body>
+</html>
