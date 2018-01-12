@@ -1,0 +1,81 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+
+header,footer
+        {
+            background-image: url("gr4.jpg");
+            color:black;
+            font-size: 40px;
+            font-family: cursive;
+            text-align:center;
+            
+            
+        }
+        body
+        {
+            background-image: url("gr7.jpg");
+            
+
+        }
+    .floating_box
+    {
+        display:inline-block;
+        padding:5px;
+        border:3px solid grey;
+        width:150px;
+        height:70px;
+        margin:10px;
+        text-align: center;
+
+    }
+    img
+    {
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+
+    }
+    div p
+    {
+        background-color: aqua;
+
+    }
+    div>p
+    {
+        background-color:yellow;
+    }
+</style>
+</head>
+<body>
+    <header>CSS Basics</header>
+    <div>
+        <h3>Floating Boxes</h3>
+        <div class="floating_box">Floating Box</div>
+        <div class="floating_box">Floating Box</div>
+        <div class="floating_box">Floating Box</div>
+        <div class="floating_box">Floating Box</div>
+        <div class="floating_box">Floating Box</div>
+        <div class="floating_box">Floating Box</div>
+    </div>
+
+  <h2 style="font-family: cursive;color:blue;text-align:center;font-size:30px;">Center an Image</h2>
+  <img src="bike.jpg" alt="Bike" width="200px" height="200px">
+<h2>Descendant Selector</h2>
+  <div>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <p>paragraph3</p>
+    <span><p>paragraph3</p></span>
+</div>
+<p>paragraph4</p>
+<p>paragraph5</p>
+</body>
+</html>
