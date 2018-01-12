@@ -1,0 +1,140 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        div.relative
+        { 
+            position:relative;
+            border:3px solid green;
+            left:0px;
+            width:250px;
+            height:200px;
+
+
+        }
+        div.absolute
+        {
+            position: absolute;
+            height:100px;
+            width:100px;
+            border: 3px solid green;
+            right:80px;
+            top: 80px;
+        }
+        header,footer
+        {
+            background-color: azure;
+            color:black;
+            font-size: 30px;
+            font-family: Courier New, Courier, monospace;
+            text-align:center;
+            
+        }
+        body{
+            background-image: url("gr2.png");
+        }
+        img
+        {
+            position: absolute;
+            z-index: -1;
+            left:0px;
+            top:0px;
+
+        }
+        img.num1
+        {
+            opacity:0.7;
+            width:100%;
+            height:200px;
+            top:400px;
+
+
+        }
+        .topleft
+        {
+            position: absolute;
+            top:400px;
+            left:20px;
+            font-size:20px;
+            font-family: cursive;
+        }
+        .topright
+        {
+            position:absolute;
+            top:400px;
+            right:20px;
+            font-size:20px;
+            font-family:cursive
+        }
+        .bottomleft
+        {
+            position: absolute;
+            bottom: 50px;
+            left:20px;
+            font-size: 20px;
+            font-family:cursive;
+        }
+        .bottomright
+        {
+            position:absolute;
+            bottom:50px;
+            right:20px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .center
+        {
+            position: absolute;
+            text-align:center;
+            top:75%;
+            font-family: cursive;
+            font-size:20px;
+            left:0;
+            width:100%;
+
+        }
+
+        
+
+        
+      
+
+    
+    
+    
+    
+    
+   </style>
+
+</head>
+<body>
+    <header><h1>CSS Examples</h1></header>
+   
+        
+    <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:azure">Just a heading over the image</h2>
+    <img src="gr1.png" height="80" width="320" style="top: 90px;"/>
+    <br><br>
+        <div class="relative">
+            This div element has position relative
+            <div class="absolute">This div element has position absolute</div>
+        </div>
+        <div>
+            <img class="num1" src="tree.jpg" alt="gradient" width="10" height="200"/>
+            <div class="topleft">Top Left</div>
+            <div class="topright">Top right</div>
+            <div class="bottomleft">Bottom Left</div>
+            <div class="bottomright">Bottom Right</div>
+            <div class="Center">Centered</div>
+        </div>
+
+    
+ 
+        
+</body>
+</html>
