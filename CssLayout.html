@@ -1,0 +1,177 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Css Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin:0;
+}
+.header
+{
+    background-color:grey;
+    font-family:cursive;
+    text-align:center;
+    height:80px;
+    text-align:center;
+    border:none;
+    border-radius: 4px;
+    padding:2px;
+    color:orangered;
+    font-size: 25px;
+
+}
+.topnav
+{
+    overflow: hidden;
+    background-color: darkcyan;
+
+}
+.topnav a
+{
+    display: block;
+    padding:10px;
+    margin:10px;
+    float:left;
+    text-decoration: none;
+    color:black;
+
+}
+.topnav a:hover
+{
+    background-color:black;
+    color:white;
+
+
+
+}
+.leftcolumn
+{
+    width:75%;
+    float:left;
+
+}
+.rightcolumn
+{
+    width:25%;
+    float:left;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 600px)
+ {
+    .column.side, .column.middle 
+    {
+        width: 100%;
+    }
+}
+.footer
+{
+    background-color: grey;
+    padding:10px;
+    text-align: center;
+}
+.style
+{
+    background-color:lightgrey;
+    padding:20px;
+    margin:5px;
+    border:none;
+    border-radius: 4px;
+}
+li a
+{
+    text-decoration:unset;
+}
+</style>        
+</head>
+<body>
+    <div class="header"><h3>Royal Enfield</h3></div>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="style">
+            <h2>Classic 350</h2>
+            <h3>Posted on 15-01-2018</h3>
+            <div><img src="re.jpg" height="25%"/></div>
+            <p>About Classic 350...</p>
+            <p>Royal Enfield Classic 350 Specifications. The 346cc,
+                 single cylinder, 4-stroke, twin-spark motor generates a maximum output of 20.08PS 
+                 at 5250rpm and 28Nm of torque at 4000rpm.
+                  The power is transferred to the rear wheel via a five-speed gearbox. 
+                The Classic has a fuel capacity of 13.5 litres and weighs in at 192kg.</p>
+                </div>
+        <div class="style">
+            <h2>Himalayan</h2>
+            <h3>Posted On 15-01-2018</h3>
+            <div><img src="re1.jpg" height="25%"></div>
+            <p>About Himalayan...</p>
+            <p>It features the all-new 411cc single-cylinder engine that offers 24.8PS at 6500rpm and 32Nm of torque at 4350rpm.
+                 The bike also comes with fuel injection to make it BS-IV compliant. For the first time,
+                  Royal Enfield has introduced a bike with monoshock rear suspension with the Himalayan. 
+                  It also offers 220mm of ground clearance to ensure a smooth ride in the most difficult of terrains. 
+                  The bike gets large spoked wheels, 19-inchers at the front, and shod with dual-purpose tyres to make it competent to ride over rough terrains.
+                 Braking is done by disc brakes on both ends while ABS has been given a miss to keep cost low</p>
+        </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="style">
+                <h2>About RE</h2>
+                <div><img src="re2.jpg" height="25%"></div>
+                <p>Started in 1901</p>
+            </div>
+            <div class="style">
+                <h2>Popular Models</h2>
+                <ul>
+                    <li><a href="#">Classic 350</a></li>
+                    <li><a href="#">Classic 500</a></li>
+                    <li><a href="#">Thunderbird</a></li>
+                    <li><a href="#">Himalayan</a></li>
+                </ul>
+            </div>
+            <div class="style">
+                <h2>Follow Here</h2>
+                <p><a href="#">Royal_Enifield</a></p>
+            </div>
+        <div class="style">
+            <h2>Submit Your Feedback</h2>
+            <form>
+                <table>
+                    <tr>
+                    <th>Name:</th>
+                    <td><input type="text" name="name" placeholder="Name"></td>
+                    </tr>
+                    <tr>
+                        <th>Message</th>
+                        <td><textarea placeholder="Write here..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><input type="submit" value="submit"></th>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </div>
+        </div>
+    
+ <div class="footer">
+     <h4>Copyright &copy All Rights Reserved</h4>
+ </div>   
+</body>
+</html>
