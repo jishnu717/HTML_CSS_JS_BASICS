@@ -1,0 +1,141 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+.header
+{
+    border:1px solid black;
+    border-radius: 5px;
+    background-image: url("gr2.jpg");
+  
+    font-family: cursive;
+    font-size: 20px;
+    text-align:center;
+    padding:20px;
+}
+input[type="text"]
+{
+    padding:10px;
+    margin:10px;
+    background-color: aliceblue;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid red;
+    box-sizing: border-box;
+
+}
+input[type="text"]:focus
+{
+    background-color: aquamarine;
+    border:2px solid greenyellow;
+    
+}
+body
+{
+background-image: url("gr7.jpg");
+counter-reset: section;
+margin:0;
+}
+h3::before
+{
+    counter-increment:section;
+    content:"section"':'counter(section);
+}
+input[type="password"]
+{
+    -webkit-transition: width 0.4 ease-in-out;
+    transition: ease-in-out;
+    border:1px solid black;
+    border-radius: 3px;
+
+
+
+
+}
+input[type="password"]:focus
+{
+    width:100%;
+    border:1px solid black;
+    border-radius: 4px;
+}
+select
+{
+    width:100%;
+    border:1px sloid grey;
+    border-radius: 4px;
+    background-color: lightcyan;
+    padding:10px;
+    margin:10px;
+
+}
+input[type="button"],input[type="submit"],input[type="reset"]
+{
+    cursor: pointer;
+    background-color: darkcyan;
+    color:whitesmoke;
+    border:none;
+    border-radius: 5px;
+    padding:16px;
+
+}
+input[type="submit"]:hover,input[type="reset"]:hover
+{
+    background-color: darkgrey;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <h2>CSS FORMS</h2>
+</div>
+<br>
+<br>
+<h2 style="font-family: cursive;font-size:20px;text-decoration:underline;">Css Form</h2>
+<table style="width:50%">
+<form><tr>
+    <th>First Name</th>
+       <td><input type="text" name="fname" placeholder="First Name" autofocus/></td>
+    </tr>
+    <tr>
+   <th> Last Name:</th>  
+   <td><input type="text" name="lname" placeholder="Last Name"/></td>
+   </tr>
+   <tr>
+
+    <th>Country</th>
+    <td>
+    <select id="country" name="country">
+        <option value="In">India</option>
+        <option value="Cn">Canada</option>
+        <option value="sr">Sri Lanka</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+        <td>
+    <input type="submit" value="submit"></input></td> <td><input type="reset" value="reset"/></td> 
+        </tr>
+
+</form>
+</table>
+<br>
+<form>
+    Search Here:<input type="password" placeholder="search.."/><br>
+
+</form>
+
+<h2>Example for counter</h2>
+<h3>Html</h3>
+<h3>Css</h3>
+<h3>JavaScript</h3>
+
+<div class=".footer"><h4>CopyRight &copy All Right Reserved</h4></div>    
+</body>
+</html>
