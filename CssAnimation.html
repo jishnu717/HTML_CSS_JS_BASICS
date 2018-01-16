@@ -1,0 +1,137 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Css Advanced</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+    .header
+    {
+    background:url(tr.png) right bottom no-repeat,url(bck2.jpg) left bottom repeat;
+    background-size: contain;
+    background-origin: border-box;
+    color:white;
+    height:auto;
+    text-align:center;
+    font-size: 40px;
+    padding:30px;
+    margin:0;
+    font-family:fantasy;
+    max-width: 100%;
+    }
+    body
+    {
+        background:url(gr7.jpg) top left repeat;
+
+    }
+    h2
+    {
+    color:yellow;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align:center;
+    }
+    div.transition
+    {
+        width:200px;
+        height:200px;
+        background:url(bullet.png) no-repeat;
+        transition: width 2s, height 2s, transform 2s;
+        background-size: contain;
+        cursor: pointer;
+        transition-delay: 1s;
+    }
+    div.transition:hover
+    {
+        width:300px;
+        height:300px;
+        transform:rotate(360deg);
+    }
+    @keyframes anim
+    {
+        from {background:url(bullet.png) no-repeat;
+              background-size:contain;                   
+                                  }
+        to   {background:url(bullet1.png) no-repeat;
+            background-size:contain;        
+                                   }
+    }
+    div.animation
+    {
+        width:400px;
+        height:300px;
+        animation-name: anim;
+        animation-duration: 10s;
+        background-size:contain;
+        animation-iteration-count: infinite;
+    }
+    @keyframes anim1
+    {
+        0%   {background:url(bullet.png) no-repeat;
+              background-size:contain; left:0px; top:0px;}
+    25%   {background:url(bullet1.png) no-repeat;
+              background-size:contain; left:400px; top:0px;}
+    50%   {background:url(bullet2.png) no-repeat;
+              background-size:contain; left:400px; top:100px;}
+    75%   {background:url(bullet3.png) no-repeat;
+              background-size:contain; left:0px; top:100px;}
+    100%  {background:url(bullet.png) no-repeat;
+              background-size:contain; left:0px; top:0px;}
+    }
+    div.animation1
+    {
+        width:200px;
+        height:200px;
+        animation-name:anim1;
+        animation-duration: 10s;
+        position: relative;
+        animation-iteration-count: 3;
+        animation-delay: 2s;
+        animation-direction:alternate-reverse;
+
+    }
+    img.one
+    {
+        border:1px sloid black;
+        padding:4px;
+        border-radius:4px;
+        width:150px;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+    }
+    img.one:hover
+    {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+
+    }
+    div.polaroid
+    {
+        width:50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin:20px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    div.container
+    {
+        padding:10px 20px;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+    .container1
+    {
+        position: relative;
+        width:50%;
+    }
+    .imag
+    {
+        display:block;
+        opacity:1;
+        width:100%;
+        height:100px;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
