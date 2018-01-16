@@ -1,0 +1,192 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Css Colors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+
+.header
+{
+    background:url(tr.png) right bottom no-repeat,url(bck2.jpg) left bottom repeat;
+    background-size: contain;
+    background-origin: border-box;
+    color:white;
+    height:auto;
+    text-align:center;
+    font-size: 40px;
+    padding:30px;
+    margin:0;
+    font-family:fantasy;
+
+}
+body
+{
+    background:url(bck1.jpg) repeat;
+}
+h1
+{
+    text-shadow: 2px 2px 5px yellow;
+    color:red;
+    text-align:center;
+}
+h2
+{
+    color:yellow;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align:center;
+}
+div.sh
+{
+    background-color:grey;
+    padding:20px;
+    color:chartreuse;
+    box-shadow: 10px 10px black;
+    width:25%;}
+div.card
+{
+    width:200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align:center; 
+    height:100px;
+    position:relative;
+    
+}
+div.hh
+{
+    background-color: cornflowerblue;
+    padding:20px;
+    color:white;
+    font-size: 40px;
+    height:auto;
+    position:relative;
+}
+div.container
+{
+    padding:10px;
+    background-color: whitesmoke;
+}
+p.test
+{
+    white-space: nowrap;
+    width:200px;
+    border:2px solid black;
+    overflow:hidden;
+    text-overflow: clip;
+}
+p.test1
+{
+    white-space: nowrap;
+    width:200px;
+    border:2px solid black;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+p.test:hover
+{
+    text-overflow: inherit;
+    overflow:visible;
+}
+p.test1:hover
+{
+    text-overflow: inherit;
+    overflow:visible;
+}
+div.one
+{
+    background-color: aqua;
+    color:red;
+    border:1px solid black;
+    transform: rotate(50deg);
+    width:25%;
+}
+div.two
+{
+    bmargin: 150px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(2,2);
+   float:right;
+    ;
+
+}
+
+</style>        
+</head>
+<body>
+    <div class="header">Css Advanced</div>
+    <h1>Text Shadow</h1>
+    <h2>Text Shadow</h2>
+    <br>
+    <div class="sh">
+           <p>BNI India is India's largest and most successful business networking organisation. 
+            We offer our members the opportunity to share ideas, contacts, and most importantly,
+             business referrals !</p>     
+    </div>
+    <br>
+    <div class="card">
+            <div class="hh">
+                <h1>16</h1>
+            </div>
+            <div class="container">
+               January 2018
+            </div>
+            
+        </div>
+    <br>
+    <div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div>
+    <h1>Example for text overflow</h1>
+    <br>
+    <p class="test">
+            BNI India is India's largest and most successful business networking organisation. 
+            We offer our members the opportunity to share ideas, contacts, and most importantly,
+             business referrals 
+    </p>
+    <p class="test1">
+            BNI India is India's largest and most successful business networking organisation. 
+            We offer our members the opportunity to share ideas, contacts, and most importantly,
+             business referrals 
+    </p>
+</div>
+<h1>2D Transforms</h1>
+<div>
+    <h2>Rotate By 50 degree</h2>
+</div>
+<div class="one">
+    <p>
+        BNI India is India's largest and most successful business networking organisation. 
+        We offer our members the opportunity to share ideas, contacts, and most importantly,
+         business referrals 
+    </p>
+</div>
+<br>
+<br>
+<br>
+<div>
+    <h2>Scale</h2>
+<br>
+<br>
+<div class="two">
+  <p>This div is 2 times of its orignal width and 2 time sof its original height</p>  
+</div>
+</div>
+
+
+
+
+    
+</body>
+</html>
