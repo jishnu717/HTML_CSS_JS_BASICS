@@ -1,0 +1,135 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Css Multiple Columns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+
+.header
+    {
+    background:url(tr.png) right bottom no-repeat,url(bullet1.png) left top no-repeat,url(bck2.jpg) left bottom repeat;
+    background-size: contain;
+    background-origin: border-box;
+    color:white;
+    height:auto;
+    text-align:center;
+    font-size: 40px;
+    padding:30px;
+    margin:0;
+    font-family:fantasy;
+    max-width: 100%;
+    }
+
+     h1
+    {
+        color:white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }     
+div.one
+{
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 5px dotted red;
+    column-span: all;
+    border:1px solid grey;
+    box-sizing: border-box;
+    margin:1px;
+}
+p
+{
+    color:darkslategrey;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-family: cursive;
+
+}
+h2
+    {
+    color:yellow;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-align:center;
+    font-size:40px;
+    }
+  div.two
+  {
+      border:2px solid black;
+      box-sizing: border-box;
+  } 
+  .flex-conatiner
+  {
+      display:flex;
+      background-color:greenyellow;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      align-content: space-between;
+  
+
+  } 
+.flex-conatiner>div
+{
+    background-color:white;
+    width:80px;
+    text-align: center;
+    padding:20px;
+    margin:10px;
+    font-size:30px;
+    font-family: cursive;
+    transition:background-color 1s;
+    
+
+}
+.flex-conatiner>div:hover
+{
+    background-color: black;
+    color:white;
+    
+}
+body
+{
+    background-color: lightblue;
+}
+@media screen and (min-width:900px)
+{
+    body{
+        background-color: lightgreen;
+    }
+
+    }
+    
+</style>
+</head>
+<body>
+    <div class="header"><h1>Css Multi Columns</h1></div>
+  <div class="one">
+        <p>CSS is designed primarily to enable the separation of presentation and content,
+         including aspects such as the layout, colors, and fonts.[3] This separation can improve
+          content accessibility, provide more flexibility and control in the specification of 
+          presentation characteristics, enable multiple HTML pages to share formatting by specifying the
+           relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+
+        Separation of formatting and content makes it possible to present the same markup page in different
+         styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or
+          screen reader), and on Braille-based tactile devices. It can also display the web page differently depending 
+          on the screen size or viewing device. Readers can also specify a different style sheet, such as a CSS file 
+          stored on their own computer, 
+        to override the one the author specified.</p>
+  </div>      
+  <h2>Flexbox Layout</h2>
+  <div class="two">
+      <div class="flex-conatiner">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+      </div>
+
+  </div>
+    
+</body>
+</html>
