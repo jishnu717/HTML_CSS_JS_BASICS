@@ -1,0 +1,125 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+   
+</head>
+<body>
+ <p id="ex"></p>
+ <br>
+ <p id="ex1"></p>
+ <br>
+ <p id="ex2"></p>   
+ <br>
+ <p id="ex3"></p>
+ <br>
+ <p id="ex4"></p>
+<br>
+<p id="ex5"></p>
+<br>
+<p id="ex6"></p>
+<br>
+<p id="ex7"></p>
+<br>
+<p id="ex8"></p>
+<br>
+<p id="ex9"></p>
+<br>
+<p id="nm"></p>
+<br>
+<p id="nm1"></p>
+<br>
+<p id="nm2"></p>
+<br>
+<p id="nm3"></p>
+<br>
+<p id="nm4"></p>
+<br>
+<p id="nm5"></p>
+<br>
+<p id="nm6"></p>
+<br>
+<p id="nm7"></p>
+<br>
+<p id="nm8"></p>
+<br>
+<p id="nm9"></p>
+<br>
+<p id="pa"></p>
+
+ <script>
+var str="toyota,honda,benz";
+var str1="Duke is the best Duke";
+var str2="Royal";
+var str3="Enfield";
+var str4=str2.concat(" ",str3);
+var res=str.slice(13,17);
+var res1=str.slice(-10,-5);
+var sub=str.substring(13,17);
+var sub1=str.substr(7,5);
+var sub2=str.substr(-10,5);
+var char=str2.charAt(0);
+var char1=str2.charCodeAt(3);
+var sub3=str1.replace(/Duke/i,"Royal Enfield");
+var str5="Example";
+var arr=str5.split("");
+var text="";
+var i;
+for(i=0;i<arr.length;i++)
+{
+    text +=arr[i]+"<br>"
+}
+var x ="100";
+var y ="10";
+var z = x * y;
+var r = 100 / "apple";
+var q=11.654;
+var t = Number.MAX_VALUE;
+var d=new Date();
+var days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+d.setFullYear(2018,0,19);
+var someday=new Date(2017,08,14);
+var text;
+if(someday>d)
+{
+    text="Today is before 2017-08";
+}
+else
+{
+    text="today is after 2017-08";
+}
+var cars=new Array("honda","bmw","benz");
+var name=cars[1];
+cars[2]="audi";
+
+
+document.getElementById("pa").innerHTML=cars;
+document.getElementById("nm9").innerHTML=text;
+document.getElementById("nm7").innerHTML=days[d.getDay()];
+document.getElementById("nm8").innerHTML=d;
+document.getElementById("nm6").innerHTML=Math.floor(Math.random() * 10);
+document.getElementById("nm3").innerHTML=q.toExponential(4);
+document.getElementById("nm5").innerHTML=Number("10.7654 657");
+document.getElementById("nm4").innerHTML=q.toFixed(2);
+document.getElementById("nm2").innerHTML=(100+23).toString();
+document.getElementById("nm1").innerHTML=isNaN(r);
+document.getElementById("nm").innerHTML=z;
+document.getElementById("ex").innerHTML=res;
+document.getElementById("ex1").innerHTML=res1;
+document.getElementById("ex2").innerHTML=sub;
+document.getElementById("ex3").innerHTML=sub1;
+document.getElementById("ex4").innerHTML=sub2;
+document.getElementById("ex5").innerHTML=sub3;
+document.getElementById("ex6").innerHTML=str4;
+document.getElementById("ex7").innerHTML=char;
+document.getElementById("ex8").innerHTML=char1;
+document.getElementById("ex9").innerHTML=text;
+
+      
+ </script>   
+</body>
+</html>
