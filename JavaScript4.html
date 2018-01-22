@@ -1,0 +1,209 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript Objects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+    .leftcolumn
+{
+    width:40%;
+    float:left;
+    border: 1px solid grey;
+    padding:10px;
+
+}
+.rightcolumn
+{
+    width:40%;
+    float:left;
+    border:1px solid black;
+    padding:10px;
+    margin-left:2px;
+   
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    </style>
+    
+    </style>
+</head>
+<body>
+    <div class="row">
+<div class="leftcolumn">
+    <p>JavaScript Objects</p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demoo3"></p>
+        <p id="demoo4"></p>
+        <p id="demoo5"></p>
+        <p id="demoo6"></p>
+       
+</div>
+<div class="rightcolumn">
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demoo1"></p>
+    <p id="demoo2"></p>
+    <p id="demoo7"></p>
+    <p id="demoo8"></p>
+    <p id="demoo9"></p>
+    <p id="demoo10"></p>
+</div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var obj=new Object();
+obj.firstName="Joshi";
+obj.lastName="Smith";
+obj.age=50;
+document.getElementById("demo").innerHTML=obj.firstName+ " "+obj.lastName+" "+"is"+obj.age+" years old";
+document.getElementById("demo1").innerHTML=obj["firstName"]+" "+obj["lastName"]+" "+" is"+obj["age"]+" years old";
+
+delete obj.age;
+document.getElementById("demo2").innerHTML=obj.firstName+ " "+obj.lastName+" "+"is"+obj.age+" years old";
+var student={
+    id:10,
+    firstName:"Kevin",
+    lastName:"peter",
+    marks:86
+
+};
+student.fulldetails=function() {
+                             return this.firstName+" "+this.lastName+" "+"having"+" "+this.marks+" "+"marks";
+};
+document.getElementById("demo3").innerHTML="The details of the student is "+student.fulldetails();
+
+
+
+
+function person(first,last,age,gender)
+{
+    this.firstName=first;
+    this.lastName=last;
+    this.age=age;
+    this.gender=gender;
+}
+person.prototype.nationality="Indian";
+var myFather=new person("Janardhanan","kaiprath",56,"M");
+var myMother=new person("P ushpa","K",48,"F");
+document.getElementById("demo4").innerHTML="My Father is "+" "+myFather.firstName+" "+myFather.lastName+" "+"And My Mother is "+" "+
+                          myMother.firstName+" "+myMother.lastName;
+document.getElementById("demo5").innerHTML="My Father"+" "+myFather.firstName+"is an"+" "+myFather.nationality;
+var c=function(a,b){return a*b};
+var v=c(3,4);
+document.getElementById("demo6").innerHTML=v;
+(function(){
+    document.getElementById("demo7").innerHTML="Heyy !!!";}
+)();
+
+function myFunc(a,b)
+{
+    return a+b;
+}
+
+var g=myFunc(4,8)*2;
+document.getElementById("demo8").innerHTML=g;
+
+
+
+
+function findMax()
+{
+    var i;
+    var max=-Infinity;
+    for(i=0;i<arguments.length;i++)
+    {
+        if(arguments[i] > max)
+        {
+            max=arguments[i];
+        }
+    }
+    return max;
+}
+document.getElementById("demo9").innerHTML=findMax(23,1,22,45,46);
+function myFunction2(a,b)
+{
+    return a-b;
+}
+document.getElementById("demo10").innerHTML=window.myFunction2(10,4);
+
+var name1=
+{
+    firstName:"Suriya",
+    lastName:"sivakumar",
+    fullName:function()
+               {
+                   return this.firstName+" "+this.lastName;
+
+               }
+}
+document.getElementById("demoo1").innerHTML=name1.fullName();
+
+
+
+function func(arg1,arg2)
+{
+    this.firstName=arg1;
+    this.lastName=arg2;
+}
+var x=new func("Mohan","Lal");
+document.getElementById("demoo2").innerHTML=x.firstName;
+
+var employee=
+{
+    firstName:"kivi",
+    lastName:"jihu",
+    fullName:function()
+    {
+        return this.firstName+" "+this.lastName;
+    }
+}
+var myObj=
+{
+    firstName:"Nancy",
+    lastName:"Thomas",
+};
+document.getElementById("demoo3").innerHTML=employee.fullName.call(myObj);
+document.getElementById("demoo4").innerHTML=Math.max.apply(null,[4,2,9]);
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
