@@ -1,0 +1,165 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+    ul
+    {
+        list-style-type:square;
+        margin: 10px;
+        padding:0;
+    }
+
+
+    </style>    
+</head>
+<body>
+<p id="js"></p>
+<p id="js1"></p>
+<p id="js2"></p>
+<p id="js3"></p>
+<p id="js4"></p>
+<p id="js5"></p>
+<p id="js6"></p>
+<p id="js7"></p>
+<p id="js8"></p>
+<p id="js9"></p>
+<p id="pa"></p>
+<button onclick="myFunction()">Click Here</button>
+<p>Lowest value and highest value</p>
+<p id="pa1"></p>
+<p id="pa2"></p>
+
+<input type="text" id="age" value="18"/>
+<button onclick="myFunc()">Try</button>
+<p id="pa3"></p>
+<button onclick="myFun()">Click Here</button>
+<p id="pa4"></p>
+<p id="pa5"></p>
+<p id="pa6"></p>
+<p id="pa7"></p>
+
+
+
+
+<script>
+var cars,clen,text,i;
+ cars=["benz","honda","toyota","suzuki"];
+ cars.push("renault");
+ clen=cars.length;
+ text="<ul>";
+ for(i=0;i<clen;i++)
+ {
+     text+="<li>"+cars[i]+"</li>";
+ }
+ text+="</ul>";
+ document.getElementById("js").innerHTML=text;
+ document.getElementById("js1").innerHTML=Array.isArray(cars);
+
+ var fruits=["grape","apple","orange"];
+ var x=fruits.pop();
+ var y=fruits.push("mango");
+ fruits.splice(2,0,"lemon","orange");
+ document.getElementById("js2").innerHTML=fruits.toString();
+ document.getElementById("js3").innerHTML=fruits.join(" * ");
+ document.getElementById("js4").innerHTML=x;
+ document.getElementById("js5").innerHTML=y;
+
+
+ var mixed=cars.concat(" ",fruits);
+ document.getElementById("js6").innerHTML=mixed;
+ var mixed1=mixed.slice(1,4);
+ document.getElementById("js7").innerHTML=mixed1;
+ document.getElementById("js8").innerHTML=fruits.sort();
+ document.getElementById("js9").innerHTML=cars.reverse();
+var num=[50,100,49,34,23,32];
+document.getElementById("pa").innerHTML=num
+function myFunction()
+{
+    num.sort(function(a, b){return a - b});
+    document.getElementById("pa").innerHTML=num;
+    document.getElementById("pa1").innerHTML=num[0]+" "+num[num.length-1];
+}
+function arrayMax(arr)
+{
+    return Math.max.apply(null,arr);
+}
+document.getElementById("pa2").innerHTML=arrayMax(num);
+
+function myFunc()
+{
+    var age=document.getElementById("age").value;
+    var voterable=(age >= 18)?"Old enough ":"Too Young";
+    document.getElementById("pa3").innerHTML=voterable+"to vote ";
+}
+function myFun()
+{
+    var hour=new Date().getHours();
+    var greeting;
+    if( hour < 11)
+    {
+        greeting="Good Morning";
+
+    }
+    else if(hour < 16)
+    {
+        greeting="Good Aftrnoon";
+    }
+    else
+    {
+        greeting="Good Evening";
+    }
+    document.getElementById("pa4").innerHTML=greeting;
+}
+var day;
+switch(new Date().getDay())
+{
+    case 0:
+        day="Sunday";
+        break;
+    case 1:
+        day="Monday";
+        break;
+    case 2:
+         day="Tuesday";
+         break;
+    case 3:
+         day="Wednsday";
+         break;
+    case 4:
+         day="Thursday";
+         break;
+    case 5:
+          day="Friday";
+          break;
+    case 6:
+        day="Saturday";
+        default:
+}
+document.getElementById("pa5").innerHTML="Today is"+" " +day;
+
+var txt="";
+var person={firstName:"Smith",lname:"lal",age:"50"};
+var x;
+for(x in person)
+{
+    txt+=person[x]+ " ";
+
+}
+document.getElementById("pa6").innerHTML=txt;
+
+var i1;
+var text1="";
+for(i1=0;i1<=10;i1++)
+{
+    if(i1==3) {continue};
+    text1+=i1+"<br>";
+}
+document.getElementById("pa7").innerHTML=text1;
+</script>    
+</body>
+</html>
