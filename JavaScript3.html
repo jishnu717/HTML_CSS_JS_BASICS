@@ -1,0 +1,183 @@
+<<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+.leftcolumn
+{
+    width:40%;
+    float:left;
+
+}
+.rightcolumn
+{
+    width:40%;
+    float:left;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="leftcolumn">
+<button type="button" onclick="myFun()">Click here</button>
+<p id="demo"></p>
+<p id="demo1">To check whether letter "e" present in the sentence or not by using test() method</p>
+<button onclick="myFunc()">Check here</button>
+<p>Input Validation</p>
+<p>Input a number between 2 and 10</p>
+<input id="demo2" type="text"/>
+<button onclick="myFunct()">Try it</button>
+<p id="message"></p>
+</div>
+<div class="rightcolumn">
+<p>Ex of Range Error</p>
+<p id="demo3"></p>
+<p>Ex of Reference Error</p>
+<p id="demo4"></p>
+<p>We cannot evaluate the code with syntax error</p>
+<p id="demo5"></p>
+<p>Trying to convert a number to uppercase </p>
+<p id="demo6"></p>
+</div>
+<div class="leftcolumn">
+    <form name="myForm" onsubmit="return myValidation()" method="post">
+
+    First Name:
+                <input type="text" name="fname"><br>
+                <br>
+           
+    Last Name:
+                <input type="text" name="lname" required><br>
+                <br>
+                <input type="submit" value="submit">
+
+
+      
+    </form>
+    <p>Enter a number between 100 and 200</p>
+    <input type="number" id="id1" min="100" max="200" name="num" required/>
+    <button onclick="myValid()">OK</button>
+    <p id="demo8"></p>
+   <br>
+   <p>Enter a value under 100</p>
+   <input type="number" id="id2" max="100"/>
+   <button onclick="myVal()">Click</button>
+   <p id="demo9"></p>
+</div>
+</div>
+ <script>
+ function myFun()
+ {
+     var x="My name is john";
+     var n=x.search("john");
+     document.getElementById("demo").innerHTML=n;
+ }
+ function myFunc()
+ {
+     text="kochi is very clean"
+     document.getElementById("demo1").innerHTML=/e/.test(text);
+ }
+ function myFunct()
+ {
+     var message,x;
+    message=document.getElementById("message");
+    message.innerHTML="";
+    x=document.getElementById("demo2").value;
+    try
+    {
+        if(x=="") throw "empty";
+        if(isNaN(x)) throw "Not A Number";
+        x=Number(x);
+        if(x<2) throw "too low";
+        if(x>10) throw "too big";
+
+    }
+    catch(err)
+    {
+        message.innerHTML="input is"+" "+err;
+    }
+ }
+
+var num=1;
+try
+{
+    num.toPrecision(500);
+}
+catch(err)
+
+{
+    document.getElementById("demo3").innerHTML=err.name;
+
+}
+var x=10;
+try
+{
+    x=y+10;
+
+}
+catch(err)
+{
+    document.getElementById("demo4").innerHTML=err.name;
+}
+try
+{
+    eval("alert('hello)");
+}
+catch(err)
+{
+    document.getElementById("demo5").innerHTML=err.name;
+}
+var no=1;
+try
+{
+    no.toUppercase();
+
+} 
+catch(err)
+{
+    document.getElementById("demo6").innerHTML=err.name;
+}
+function myValidation()
+{
+    var x=document.forms["myForm"]["fname"].value;
+    if(x=="")
+    {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+function myValid()
+{
+    var obj=document.getElementById("id1");
+    if(!obj.checkValidity())
+    {
+        document.getElementById("demo8").innerHTML=obj.validationMessage;
+    }
+    else
+    {
+        document.getElementById("demo8").innerHTML="INPUT IS OK";
+    }
+}
+function myVal()
+{
+    var txt=" ";
+    if(document.getElementById("id2").validity.rangeOverflow)
+    {
+        txt="Tooo Large";
+    }
+    document.getElementById("demo9").innerHTML=txt;
+}
+ 
+ 
+ </script>   
+</body>
+</html>
