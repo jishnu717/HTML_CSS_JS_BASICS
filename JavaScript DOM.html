@@ -1,0 +1,180 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+ <style>
+ #container
+ {
+     width:200px;
+     height:200px;
+     position: relative;
+     background-color: brown;
+ }
+ #animate
+ {
+     width:60px;
+     height:60px;
+     position: absolute;
+     background-color:blue;
+     bottom:0;
+ }
+ 
+ 
+ </style>   
+</head>
+<body>
+ <p id="intro">Helloooooo</p>   
+
+ <p id="one"></p>
+ <button onclick="move()">Click here</button>
+ <div id="container">
+     <div id="animate"></div>
+ </div>
+<h1 onclick="this.innerHTML='oopss !!'">Click here !!</h1>
+<button onclick="displayDate()">Try it</button>
+<p id="two"></p>
+<br>
+enter your name
+<input type="text" id="fname" onchange="myChange()">
+
+<div onmouseover="viewOver(this)" onmouseout="viewOut(this)" style="background-color: cyan;color:black;width:100px;height:100px;text-align:center;"></div>
+<br>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color: blueviolet;color:black;width:100px;height:100px;"></div>
+<p>Example For AddEventListener</p>
+<button id="myBtn">Click Here</button>
+<div id="three"></div>
+<button id="btn">Try it</button>
+
+
+<div id="myDiv">
+    <p id="myP">I'm Bubbling</p>
+</div>
+<div id="myDiv2">
+    <p id="myP2">I'm Capturing</p>
+</div>
+
+<div id="four">
+    <p id="p1">This a paragraph</p>
+    <p id="p2">This is another paragraph</p>
+</div>
+
+<p id="five"></p>
+
+
+<button onclick="setTimeout(f3,3000);">Click here</button>
+
+<p id="six"></p>
+
+<button onclick="clearInterval(myVar)">Stop Time</button>
+
+<p id="seven"></p>
+
+
+
+
+
+ <script>
+ var x=document.getElementsByTagName("p");
+ document.getElementById("one").innerHTML=x[0].innerHTML;
+ function move()
+ {
+     var elem=document.getElementById("animate");
+     var pos=0;
+     var id=setInterval(frame,5);
+     function frame()
+     {
+         if(pos==140)
+         {
+             clearInterval(id);
+         }
+         else
+         {
+             pos++;
+             elem.style.left = pos + 'px';
+             elem.style.bottom = pos + 'px';
+         }
+     }
+
+ }
+ function displayDate()
+ {
+     document.getElementById("two").innerHTML=Date();
+ }
+ function myChange()
+ {
+     var x=document.getElementById("fname");
+     x.value=x.value.toUpperCase();
+ }
+ function viewOver(obj)
+ {
+     obj.innerHTML="Thank You"
+
+ }
+ function viewOut(obj)
+ {
+     obj.innerHTML="Mouse Over Me !"
+ }
+ function mDown(obj)
+ {
+     obj.style.backgroundColor="red";
+     obj.innerHTML="Click Me";
+ }
+ function mUp(obj)
+ {
+     obj.style.backgroundColor="yellow";
+     obj.innerHTML="Release Me";
+ }
+ document.getElementById("myBtn").addEventListener("click",date);
+ function date()
+ {
+     document.getElementById("three").innerHTML=Date();
+ }
+ var z=document.getElementById("btn");
+ z.addEventListener("click",f1);
+ z.addEventListener("click",f2);
+ function f1()
+ {
+     alert("Hai");
+ } 
+ function f2()
+ {
+     alert("hello");
+ }
+ document.getElementById("myDiv").addEventListener("click",function (){alert("this is Div")},false);
+ document.getElementById("myP").addEventListener("click",function(){alert("this is p")},false);
+ document.getElementById("myDiv2").addEventListener("click",function(){alert("this is Div")},true);
+ document.getElementById("myP2").addEventListener("click",function(){alert("This is p")},true);
+
+
+var para=document.createElement("h2");
+var ele=document.createTextNode("This is a heading");
+para.appendChild(ele);
+
+var element=document.getElementById("four");
+var child=document.getElementById("p1");
+
+element.insertBefore(para,child);
+element.replaceChild(para,child);
+document.getElementById("five").innerHTML="screen width is"+" "+screen.width;
+function f3()
+{
+    alert("hello");
+} 
+var myVar=setInterval(timer,1000);
+function timer()
+{
+    var d= new Date();
+    document.getElementById("six").innerHTML=d.toLocaleTimeString();
+}
+
+
+var myJson='{"name":"Jishnu","Age":21,"city":"Kannur"}';
+var myObj=JSON.parse(myJson);
+document.getElementById("seven").innerHTML=myObj.name+" "+myObj.Age+" "+myObj.city;
+ </script>
+</body>
+</html>
