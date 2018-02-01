@@ -1,0 +1,1430 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kerala Toursim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://www.keralatourism.org/favicon.ico" type="image/x-icon" />
+    <style>
+        *
+        {
+            box-sizing:border-box;
+        }
+body,html{background-color:#f2f2f2;font-size:16px;color:#333;}
+    .container {
+	padding-right:10px;
+	padding-left:10px;
+	margin-right:auto;
+	margin-left:auto
+    }
+    .row {
+      margin-right:auto;
+      margin-left:auto
+}
+
+
+
+
+    @media (min-width:768px) {
+.container {
+width:750px
+}
+}
+@media (min-width:992px) {
+.container {
+width:970px
+}
+}
+@media (min-width:1200px) {
+.container {
+width:1170px
+}
+}
+@media (min-width:1300px) {
+.container {
+width:1280px
+}
+}
+.container-fluid {
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+  
+.header{
+     display:table-cell; 
+     position:fixed;
+     z-index:999;
+     height:109px; 
+     top:0; 
+     left:0;
+     vertical-align:middle; 
+      max-width:100%;
+      padding:0; 
+      background-color:rgba(255,255,255,.1);
+      box-shadow:0 5px 10px rgba(0, 0, 0, .1);
+      }
+.header.header-bg
+      {background-color:rgba(0, 57, 115, 1);
+      transition: background-color 200ms linear;
+       border-bottom:0px solid #fff;
+       }
+.logo{float:left; width:auto; padding:0; width:75%;margin:10px;}
+.logo img{max-width:350px;}
+    
+a {
+	background-color:transparent;
+}
+a:active, a:hover {
+	outline:0;
+}  
+img {
+    max-width:100%;height:auto;vertical-align:middle;border:0;
+}   
+
+ .mySlides {display: none}
+
+.slideshow-container {
+  max-width:100% ;
+  position: relative;
+  margin:0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  height:auto;
+  text-align: center;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}   
+.first
+{
+    position:absolute;
+    top:220px;
+    right:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 8px;
+    opacity:0.7;
+} 
+.second
+{
+    position:absolute;
+    top:320px;
+    right:10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 6px;
+    opacity: 0.8;
+}
+.third
+{
+    position:absolute;
+    top:420px;
+    right:10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+    opacity: 0.5;
+    letter-spacing: 8px;
+    
+} 
+.solo
+{
+    position: absolute;
+    top:120px;
+    right:10px;
+    letter-spacing: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    color:yellow;
+    opacity: 0.7;
+    
+}
+.top-menu{
+          font-family: 'Oswald', sans-serif; 
+          width:auto; 
+          list-style:none;
+          margin:0;
+          padding:0;
+          font-size:18px; 
+          line-height:20px; 
+          float:right;
+          margin-top: 80px;
+          text-shadow:1px 1px 0 rgba(0, 0, 0, .5); 
+          line-height:30px;
+          }
+.top-menu li{
+               width:auto; 
+               list-style:none; 
+               margin:0; padding:0 10px 0 10px; 
+               float:left;}
+.top-menu li a{
+    color:#FFF;
+    text-decoration: none;
+}
+h2
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight:500;
+	line-height:1.1;
+	color:inherit;
+    text-align:Center;
+    color:darkslateblue;
+    font-size:50px;
+    font-weight: bold;
+}
+.sub-head
+{
+    text-align: center;
+    color:lightslategray;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 4px;
+} 
+.row1 > .column {
+  padding: 0 8px;
+}
+
+.row1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 23%;
+  margin:10px;
+
+} 
+.column2
+{
+  float: left;
+  width: 30%;
+  margin:10px;
+
+}
+.image1
+{
+    margin:10px;
+    padding:10px;
+    height:300px;
+    width:auto;
+    
+}
+.container1 {
+  position: relative;
+  width:auto;
+  
+}
+
+.img-responsive
+{
+	display:block;
+	max-width:100%;
+	height:250px;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:white;
+  overflow: hidden;
+  width:auto;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.7;
+}
+
+.container1:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+.container2:hover .overlay{
+  height:100%;
+  cursor:pointer;
+}
+
+.text1 {
+  color:Black;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: cursive;
+  width:100%;
+  height:auto;
+}
+.center1
+{
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    left:10px;
+    font-size: 40px;
+    font-family: monospace;
+    color:white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+
+
+}
+.block {
+    display: block;
+    width: 30%;
+    border: none;
+    background-color:darkslateblue;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
+}
+.bck
+{
+  background:url("Munnar.jpg") left top no-repeat;
+  width:100%;
+  margin-top:30px;
+  height: auto;
+
+}
+.sub-head1
+{
+    text-align: center;
+    color:navy;
+    font-family:cursive;
+    letter-spacing: 2px;
+    padding: 40px;
+    font-size:17px;
+    opacity: 0.5;
+
+} 
+.head
+{
+  font-family:Courier New, Courier, monospace;
+  font-size: 40px;
+  color:white;
+  text-align: center;
+  padding-top:20px;
+}
+.container2 {
+    position: relative;
+    max-width: 800px;
+    margin-left: 20px;
+}
+
+.container2 img {vertical-align: middle;
+                 height:200px;
+                 width:100%;
+                 }
+.container2 img:hover
+{
+  cursor: pointer;
+
+}
+
+.container2 .content1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    font-size:16px;
+    cursor:pointer;
+}
+ul
+{
+  list-style-type: none;
+}
+ul li
+{
+  padding:10px;
+
+}
+.column3
+{
+  float: left;
+  width: 30%;
+  margin-left:20px;
+
+}
+ul li a
+{
+  text-decoration: none;
+  color:darkblue;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container3
+{
+  background-color: lightgray;
+
+}
+.sub-head2
+{
+    text-align: center;
+    color:black;
+    font-family:cursive;
+    letter-spacing: 2px;
+    padding: 40px;
+    font-size:17px;
+    opacity: 0.7;
+
+}
+.container2 .content2 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f1f1;
+    width: 100%;
+    padding:0;
+    text-align: center;
+    font-family: Courier New, Courier, monospace;
+    cursor:pointer;
+    
+} 
+.column3
+{
+  float:left;
+  width:23%;
+  margin:10px;
+}
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: darkslateblue;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity:0.9;
+}
+
+.container2:hover .overlay1
+{
+  bottom:0;
+  height:100%;
+  cursor: pointer;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: cursive;
+}
+.container2 .content4 {
+  position: absolute;
+  top: 1px;
+  left: 16px;
+  color:white;
+  padding:0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.container2 .content5
+{
+  position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color:darkred;
+    border: 1px solid red;
+    color:white;
+    font-size: 14px;
+    border-radius: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity:0.6;
+}
+.container2:hover .overlay2
+{
+  bottom:0;
+  height:100%;
+  cursor: pointer;
+}
+.travel-icons{list-style:none;padding:0; text-align:center; margin:0 0 40px 0}
+.travel-icons li{list-style:none; margin:0 20px; display:inline-block}
+
+.travel-icons li i{display:inline-block;
+	text-align:center;
+	width:100px; height:100px;
+	padding:20px;
+  border-radius:80px;
+	color:#ffffff;
+	cursor:pointer;
+	line-height:40px;
+	font-size:30px;
+	background-color:chocolate; text-align:center;
+	}
+	
+	.travel-icons li i:hover{background-color:coral;}
+	.travel-icons li i img{margin:0 auto; width:80%;}
+	.travel-icons li .hotel img{margin-top:10px;}
+	.travel-icons li .brochure img{margin-top:10px;}
+	.travel-icons li .messageboard img{margin-top:10px;}
+	.travel-icons li .quote img{margin-top:10px; margin-left:12px;}
+	.travel-icons li .visa img{margin-top:8px;}
+	.travel-icons li .info img{margin-top:0px;}
+	
+.travel-icons li a .caption{color:#036; font-size:20px; font-weight:500; margin:10px 0; display:block; text-align:center; letter-spacing:-0.5px}
+    
+ input[type="text"]
+ {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+ } 
+ select 
+ {
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+ }
+ .container5
+ {
+   position: relative;
+   margin:0;
+
+ } 
+ .column5
+ {
+   float:left;
+   width:16%;
+
+ }
+ .column5 img
+ {
+   height:180px;
+ }
+ .container5:hover .overlay3{
+  height:100%;
+  top:0;
+  cursor:pointer;
+}
+.column6
+{
+  height:10px;
+}
+.overlay3 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color:orange;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  opacity:0.8;
+}
+.social{list-style:none;margin:0; padding:0; text-align:center; margin-top:-15px}
+.social li{list-style:none; margin:0 5px; display:inline-block}
+.social li a{display:block;
+	text-align:center;
+	width:80px; height:80px;
+	padding:25px;
+border-radius: 50px;
+	color:#ffffff;
+	cursor:pointer;
+	line-height:40px;
+	font-size:30px;
+  }
+  .social .yt{background-color:red;}
+  .social .fb{background-color:blue;}
+  .social .tw{background-color: lightskyblue;}
+  .social .go{background-color:crimson}
+  .social .in{background-color:darkcyan; }
+  .social .wt{background-color: green;}
+
+.footer-section
+{
+  margin:0;
+}  
+.footer-section h3
+{
+  color:blue;
+}
+.footer-section [class*=col-]{float:left;background-color: #ccc;}
+.footer-section h3{color:#036; font-weight:500; font-size:20px}
+.footer-section a{color:#232323}
+.footer-menu{margin:15px 0; padding:0; list-style:none;}
+.footer-menu li{margin:3px 0;overflow: auto;}
+
+.associates{display:block; padding:0;margin:20px 0 40px 0;width:100%;float:left; text-align:center;}
+.associates img{width:auto;}
+.associates a{display:inline-block;text-align:center; padding:0 5px;width:auto;}
+
+
+</style>
+</head>
+<body>
+ <div class="header">
+     <div class="container header-container">
+         <div class="row">
+            <div class="col-m-4">
+                <div class="logo"><Img src="https://www.keralatourism.org/images/kt/kerala-tourism-title.png?d=25122017" alt="Kerala Tourism"></div>
+                </div>
+                <ul class="top-menu">
+                        <li><a href="#experience-kerala">EXPERIENCE KERALA</a></li>
+                        <li><a href="#things-to-do">THINGS TO DO</a></li>
+                        <li><a href="#where-to-go">WHERE TO GO</a></li>
+                        <li><a href="#plan-your-trip">PLAN YOUR TRIP</a></li>
+                        <li class="search"><a href="javascript:void(0)" id="search"><i class="fa fa-search"></i></a></li>
+                        </ul>
+            </div>
+         </div>
+     </div> 
+ </div>
+ <div class="slideshow-container">
+
+        <div class="mySlides fade">         
+         <img src="ERV1.jpg" style="width:100%;height:570px;"><div class="solo">Welcome To 2018</div><div class="first">Eravikulam National Park</div>
+          <div class="text">Eravikulam National Park</div>
+        </div>
+        
+        <div class="mySlides fade">         
+          <img src="PER1.jpg" style="width:100%;height:570px;"><div class="second">Periyar Tiger Reserve</div>
+          <div class="text">Periyar Tiger Reserve</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="ATR2.jpg" style="width:100%;height:570px;"><div class="third">Athirapally Waterfall</div>
+          <div class="text">Athirapally Water Fall</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+ <div class="container">
+     <div class="row">
+       <div class="col-md-12 section-head">
+            <h2>Experience Kerala</h2>
+            <div class="sub-head"><p>"Golden beaches, emerald backwaters, lofty mountain ranges, powerful art forms...the choices are many and so are the wonders  
+                that await you in Kerala. Come and take home what they call ‘memories’, the kind that makes life 
+                       worth living" </p></div>
+         </div>
+         </div>   
+  <div class="row1">
+      <div class="column1">
+            <div class="container1"> 
+                    <img src="Theyyam.jpg" alt="Avatar" class="img-responsive"><div class="center1">ART</div>
+                    <div class="overlay">
+                      <div class="text1">"A heady concoction of passion, fervent faith, ethereal music, vibrant colours, ritualistic practices, grace and tradition, the artforms of God’s Own Country are all of these and much much more!"</div>
+                    </div>
+                  </div>
+      </div>
+      <div class="column1">
+            <div class="container1">
+                    <img src="Hill.jpg" alt="Avatar" class="img-responsive"><div class="center1">HILL</div>
+                    <div class="overlay">
+                      <div class="text1">"Its never just about trekking, climbing or camping is it? It’s also about sights and experiences that make your heart go “Wow!” Trust us; the whispering mists up here will never disappoint you."</div>
+                    </div>
+                  </div>
+
+      </div>
+      <div class="column1">
+            <div class="container1">
+                    <img src="Ayurveda.jpg" alt="Avatar" class="img-responsive"><div class="center1">AYURVEDA</div>
+                    <div class="overlay">
+                      <div class="text1">"Ayurveda, believed to be the oldest healthcare system in the world, is the pride of God’s Own Country. A source of healing and rejuvenation for the body, mind and soul, it touches lives like nothing else ever can"</div>
+                    </div>
+                  </div>
+      </div>
+      <div class="column1">
+            <div class="container1">
+                    <img src="Boat.jpg" alt="Avatar" class="img-responsive"><div class="center1">Boat Racing</div>
+                    <div class="overlay">
+                      <div class="text1">"With a legacy of over six centuries the Chundan Vallom or Snake Boat of God's Own Country is a majestic sight to behold! A race of such grand vessels is one of those rare events that truly inspire awe in travellers."</div>
+                    </div>
+                  </div>
+      </div>
+  </div> 
+  <div class="container">
+    <div class="row">
+        <button class="block">FIND MORE EXPERIENCES &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+
+    </div>
+  </div>
+  </div>
+  
+      <div class="bck">
+        <div class="head">Things To Do In Kerala</div>
+        <div class="sub-head1">
+
+            When in Kerala all you do is to LET GO. Let the lazy backwaters set pace to your day and village folksongs croon to your heart. Let the clarion call of the jungles awaken the wilderness in you. Bathe elephants. Discover remote festivals that leave imprints on your soul. Take your taste buds on rides through flavours they never dreamt existed. Camp in the woods lying awake listening to the symphony of Nature at night and early in the morning let the mountain mists awake you with whispered tales of long forgotten travellers…
+        </div>
+        <div class="row1">
+          <div class="column2">
+             <div class="container2">
+                 <img src="Wlk.jpg" alt="Walk Through Woods" class="img-responsive" >
+                 <div class="content1">
+                   Walk Through Woods
+                 </div>
+             </div>
+
+          </div>
+          <div class="column2">
+              <div class="container2">
+                  <img src="Ayurveda.jpg" alt="Ayurveda" class="img-responsive">
+                  <div class="content1">
+                    Ayurveda Rejuvenation
+                  </div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="Hse.jpg" alt="House Boat" class="img-responsive">
+                  <div class="content1">
+                    House Boat Cruise
+                  </div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="Festival.jpg" alt="Festivals" class="img-responsive">
+                  <div class="content1">
+                    Vibrant Festivals Of Kerala
+                  </div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="Vil.jpg" alt="Village" class="img-responsive">
+                  <div class="content1">
+                    Village Experience
+                  </div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="Sadya.jpg" alt="Sadya" class="img-responsive">
+                  <div class="content1">
+                    Sadya
+                  </div>
+              </div>
+ 
+           </div>
+          
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <button class="block">FIND MORE ACTIVITIES &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        
+            </div>
+          </div> 
+      </div>
+      </div>
+      
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <h2>What's New !</h2> 
+                <div class="sub-head">This is your one stop to get all the latest news and updates from Kerala Tourism. Information regarding fairs, road shows and contests shall be posted here.</div>
+                 <hr>
+              </div>
+                    <div class="row1">
+                      <div class="column3" style="margin-left: 180px;">
+                        <ul>
+                          <li>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><a href='https://www.keralatourism.org/latestfromkeralatourism/nishagandhi_dance_festival_2018___creative.pdf' target='_blank'>Nishagandhi Festival 2018</a></li>
+                          <li>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><a href='https://www.keralatourism.org/latestfromkeralatourism/nishagandhi_dance_festival_2018___creative.pdf' target='_blank'>International Paragliding Fest @ Vagamon from 20 Jan to 18 Feb</a></li>    
+                          <li>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><a href='https://www.keralatourism.org/latestfromkeralatourism/nishagandhi_dance_festival_2018___creative.pdf' target='_blank'>Tourism News : January 2018</a></li> 
+                        </ul>
+
+                        </div>
+                        <div class="column3">
+                            <ul>
+                              <li>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><a href='https://www.keralatourism.org/latestfromkeralatourism/nishagandhi_dance_festival_2018___creative.pdf' target='_blank'>Kathakali Festival 2018, 20 -26 January 2018 @ Nishagandhi Auditorium</a></li>
+                              <li>&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i><a href='https://www.keralatourism.org/latestfromkeralatourism/nishagandhi_dance_festival_2018___creative.pdf' target='_blank'>Kerala Tourism Newsletter January 2018</a></li>    
+                             </ul>
+                            </div>
+                    </div>
+                    <button class="block">MORE ACTIVITIES &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    </div>
+                    </div>
+         <div class="container3">
+           <h2 style="padding:30px;">What is happening</h2>
+                <div class="sub-head2">Kerala is teeming with events and festivals round the year so be sure to keep track of what happens when and where so as to be able to enjoy your trip to the fullest. From Cultural fairs like the Kochi Muziris Biennale to the legendary boat races of Kerala and other ritualistic festivals and celebrations, the list is endless.</div>
+            <div class="row1">
+               <div class="column1">
+                 <div class="container2">
+                 <img src="nishagandhi.jpg" alt="nishagandhi" style="height:290px;"><div class="overlay"><div class="text1">Nishagadhi</div></div>
+                 <div class="content2">
+                   <h1>20-26</h1>
+                   <h3>Jan-28</h3>
+                 </div>
+                </div>
+               </div>
+               <div class="column1">
+                 <div class="container2">
+                 <img src="adoor.jpg" alt="adoor gajarajamela" style="height:290px;"><div class="overlay"><div class="text1">Adoor Gajamela</div></div>
+                 <div class="content2">
+                   <h1>27</h1>
+                   <h3>Jan 2018</h3>
+                 </div>
+               </div>
+              </div>
+               <div class="column1">
+                 <div class="container2">
+                <img src="arthungal.jpg" alt="Arthungal" style="height:290px;"><div class="overlay"><div class="text1">Arthungal Church</div></div>
+                <div class="content2">
+                  <h1>27</h1>
+                  <h3>Jan 2018</h3>
+                </div>
+                
+
+              </div>
+               </div>
+               <div class="column1">
+                 <div class="container2">
+                 <img src="thaipooyam.jpg" alt="Thaipooyam" style="height:290px;"><div class="overlay"><div class="text1">Thaipooyam</div></div>
+                <div class="content2">
+                  <h1>31</h1>
+                  <h3>Jan 2018</h3>
+                </div>
+                </div>
+               </div>
+
+
+
+
+            </div>
+            <button class="block">MORE FESTIVAL EVENTS &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+       </div>            
+<div class="container">
+  <div class="row">
+    <h2>Top Destinations</h2>
+    <div class="sub-head1">A tropical paradise where you can paddle in tranquil backwaters, trek the rocky Western Ghats, chase the mists in the hill stations, rejuvenate with pristine Nature and Ayurvedic treatments, hug the unspoiled beaches and so much more.  Kerala isn’t just a destination; it’s a saga of experiences!</div>
+  </div>
+</div>
+    <div class="row1">
+    <div class="column3">
+      <div class="container2">
+        <img src="Munnar.jpg" alt="Munnar" style="height:165px;">
+        <div class="overlay1">
+          <div class="text2">Munnar</div>
+        </div>
+      </div>
+    </div>
+    <div class="column3">
+        <div class="container2">
+          <img src="thekkady.jpg" alt="Thekkady" style="height:165px;">
+          <div class="overlay1">
+              <div class="text2">Thekkady</div>
+            </div>
+        </div>
+      </div>
+      <div class="column3">
+          <div class="container2">
+            <img src="fortkochi.jpg" alt="Fort Kochi" style="height:165px;">
+            <div class="overlay1">
+                <div class="text2">Fort Kochi</div>
+              </div>
+          </div>
+        </div>
+        <div class="column3">
+            <div class="container2">
+              <img src="kovalam.jpg" alt="Kovalam" style="height:165px;">
+              <div class="overlay1">
+                  <div class="text2">Kovalam</div>
+                </div>
+            </div>
+          </div>
+          <div class="column3">
+              <div class="container2">
+                <img src="alapuzha.jpg" alt="Alapuzha" style="height:165px;">
+                <div class="overlay1">
+                    <div class="text2">Alappuzha</div>
+                  </div>
+              </div>
+            </div>
+            <div class="column3">
+                <div class="container2">
+                  <img src="bekal.jpg" alt="Bekal" style="height:165px;">
+                  <div class="overlay1">
+                      <div class="text2">Bekal Fort</div>
+                    </div>
+                </div>
+              </div>
+              <div class="column3">
+                  <div class="container2">
+                    <img src="vagamon.jpg" alt="Vagamon" style="height:165px;">
+                    <div class="overlay1">
+                        <div class="text2">Vagamon</div>
+                      </div>
+                  </div>
+                </div>
+                <div class="column3">
+                    <div class="container2">
+                      <img src="muzhappilangad.jpg" alt="Muzhappilangad" style="height:165px;">
+                      <div class="overlay1">
+                          <div class="text2">Muzhappilangad</div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                        
+    
+
+                  <button class="block" style="margin-top: 50px;">EXPLORE OUR DESTINATIONS &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+ <div class="container3">
+<div class="container">
+  <div class="row">
+    <h2 style="padding-top: 100px;">Tour Packages</h2>
+    <div class="sub-head1">STOP. Breathe. Slow down. Embrace life. It’s time for Kerala! 
+        Plan your trip with amazing offers and packages</div>
+        <div class="row1">
+          <div class="column2">
+             <div class="container2">
+                 <img src="c1.jpg" alt="Walk Through Woods">
+                 <div class="overlay2"></div>
+                 <div class="content4">
+                   <h3>Entire Kerala</h3>
+                   <p>A Journey through God's Own Country</p>
+                 </div>
+                 <div class="content5">INR33,000-66,000</div>
+             </div>
+
+          </div>
+          <div class="column2">
+              <div class="container2">
+                  <img src="c2.jpg" alt="Walk Through Woods">
+                  <div class="overlay2"></div>
+                  <div class="content4">
+                    <h3>Central Kerala</h3>
+                    Trip To The Soul Of Kerala
+                  </div>
+                  <div class="content5">INR14000-47000</div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="c3.jpg" alt="Walk Through Woods">
+                  <div class="overlay2"></div>
+                  <div class="content4">
+                    <h3>BackWater</h3>
+                    Through the streches of emerald
+                  </div>
+                  <div class="content5">INR7000-14000</div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="Temple.jpg" alt="Walk Through Woods">
+                  <div class="overlay2"></div>
+                  <div class="content4">
+                    <h3>South Kerala</h3>
+                    A Journey To Remember
+                  </div>
+                  <div class="content5">INR11400-56156</div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="Hill.jpg" alt="Walk Through Woods">
+                  <div class="overlay2"></div>
+                  <div class="content4">
+                    <h3>Hill Station</h3>
+                    Explore the lush mist-clad hill stations
+                  </div>
+                  <div class="content5">INR13950-19250</div>
+              </div>
+ 
+           </div>
+           <div class="column2">
+              <div class="container2">
+                  <img src="c4.jpg" alt="Walk Through Woods">
+                  <div class="overlay2"></div>
+                  <div class="content4">
+                    <h3>Honeymoon</h3>
+                    Celebrate your romance
+                  </div>
+                  <div class="content5">INR29500-62000</div>
+              </div>
+ 
+           </div>
+
+
+          
+  </div>
+  <button class="block" style="margin-top: 50px;">FIND MORE PACKAGES &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+    <h2>Plan Your Trip</h2>
+    <div class="sub-head1">We know just how big a burden planning a trip can be. Hundreds of nitty gritty things to go through, check and double check. Especially with a destination as filled with options as Kerala, even the best of planners are sure  to get overwhelmed. So here you are, a one place stop that will make your trip a cakewalk. Come click your way to the best holiday of your life!</div>
+     <div class="col-md-12">
+       
+      <ul class="travel-icons">
+           <li>
+             <a href="#"><i class="hotel"><img src="https://www.keralatourism.org/images/kt/tr-icon-hotel.png"/></i><span class="caption">Where To Stay</span></a>
+           </li>
+           <li>
+             <a href="#"><i class="messageboard"><img src="https://www.keralatourism.org/images/kt/tr-icon-messageboard.png"></i><span class="caption">Ask Us</span></a>
+           </li>
+           <li>
+             <a href="#"><i class="quote"><img src="https://www.keralatourism.org/images/kt/tr-icon-get-a-quote.png"></i><span class="caption">Get A Quote</span></a>
+           </li>
+           <li>
+             <a href="#"><i class="brochure"><img src="https://www.keralatourism.org/images/kt/tr-icon-brochure.png"></i><span class="caption">E Brouchure</span></a>
+           </li>
+           <li>
+             <a href="#"><i class="visa"><img src="https://www.keralatourism.org/images/kt/tr-icon-visa.png"></i><span class="caption">Visa On Arrival</span></a>
+           </li>
+           <li>
+             <a href="#"><i class="info"><img src="https://www.keralatourism.org/images/kt/tr-icon-info.png"></i><span class="caption">Travel Info</span></a>
+           </li>
+          </ul>
+     </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h3 style="color:#717171;font-family:Arial, Helvetica, sans-serif;text-align:center;">Where To Stay In Kerala</h3>
+    <div class="row1" style="background-color: #ccc;">
+        <div class="column1" style="margin-left: 150px;">
+          <input type="text" placeholder="Enter keyword">
+        </div>
+        <div class="column1">
+          <select name="destinations">
+            <option value="Kannur">Select Destination</option>
+            <option value="kovalam">Kovalam</option>
+            <option value="Alapuzha">Alapuzha</option>
+            <option value="Kannur">Kannur</option>
+            <option value="Munnar">Munnar</option>
+          </select>
+        </div>
+        <div class="column1">
+            <select name="Category">
+              <option value="category">Select Category</option>
+              <option value="ayurveda">Ayurveda</option>
+              <option value="homestay">Homestay</option>
+              <option value="resort">Resort</option>
+              <option value="villas">Serviced Villa</option>
+            </select>
+          </div>
+              <button class="block" style="margin-top: 50px;background-color:green;"><i class="fa fa-search" aria-hidden="true"></i>Search </button>
+              
+      </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+  <h2>Explore Photo Gallery</h2>
+  <div class="sub-head">Rejoice memories of Kerala holidays from the comfort of your home at any time, Kerala through the lens</div>
+  <br>
+
+  <div class="row1">
+    <div class="column5" style="margin-left:20px;">
+      <div class="container5">
+      <img src="c2.jpg" alt="Beach">
+      <div class="overlay3">
+        <div class="text2">Beaches</div>
+
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="sea bridge.jpg" alt="Sea Bridge">
+      <div class="overlay3">
+        <div class="text2">Kerala Panorama</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+       <div class="container5">
+      <img src="Temple.jpg" alt="Pilgrim">
+      <div class="overlay3">
+        <div class="text2">Pilgrim Centres</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="mohiniyattam.jpg" alt="ArtForms">
+      <div class="overlay3">
+        <div class="text2">Art Forms</div>
+      </div>
+    </div>
+    </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="festivals.png" alt="Festivals">
+      <div class="overlay3">
+        <div class="text2">Festivals</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="chinese.jpg" alt="Places Of Intrest">
+      <div class="overlay3">
+        <div class="text2">Places Of Intrest</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5" style="margin-left:20px;">
+      <div class="container5">
+      <img src="ATR2.jpg" alt="Waterfalls">
+      <div class="overlay3">
+        <div class="text2">Waterfall</div>
+      </div>
+    </div>
+    </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="Boat.jpg" alt="Festivals">
+      <div class="overlay3">
+        <div class="text2">Festivals</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="PER1.jpg" alt="Wild Life">
+      <div class="overlay3">
+        <div class="text2">Wild Life</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="hills.jpg" alt="Hills">
+      <div class="overlay3">
+        <div class="text2">Hills</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="Ayr.jpg" alt="Ayurveda">
+      <div class="overlay3">
+        <div class="text2">Ayurveda</div>
+      </div>
+    </div>
+  </div>
+    <div class="column5">
+      <div class="container5">
+      <img src="backwater.jpg" alt="Backwater">
+      <div class="overlay3">
+        <div class="text2">Backwater</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<button class="block" style="margin-top: 50px;">BROWSE OUR GALLERY &nbsp;<i class="fa fa-picture-o" aria-hidden="true"></i></button>
+</div>
+<div class="container">
+  <div class="row">
+    <h2 style="margin-top: 100px;">Connect with our social channels</h2>
+    <div class="col-md-12">
+      <ul class="social">
+        <li>
+          <a href="#" class="yt" target="_blank"><i class='fa fa-youtube'></i></a>
+        </li>
+        <li>
+          <a href="#" class="fb" target="_blank"><i class='fa fa-facebook'></i></a>
+        </li>
+        <li>
+          <a href="#" class="tw" target="_blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" class="go" target="_blank"><i class="fa fa-google"></i></a>
+        </li>
+        <li>
+          <a href="#" class="in" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="wt" target="_blank"><i class="fa fa-whatsapp"></i></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container3">
+<div class="footer-section">
+        <div  class="col-m-5 col-2">
+          <h3>Explore</h3>
+          <ul class="footer-menu">
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Governmental Affairs</a></li>
+            <li><a href="#">Media Room</a></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">Google Map</a></li>
+          </ul>
+        </div>
+        <div  class="col-m-5 col-2">
+          <h3>Travel Hub</h3>
+          <ul class="footer-menu">
+            <li><a href="https://www.keralatourism.org/kerala-at-a-glance/">Kerala at a glance</a></li>
+            <li><a href="https://www.keralatourism.org/traveller-forum">Message Board</a></li>
+            <li><a href="https://www.keralatourism.org/service-providers/">Service Providers</a></li>
+            <li><a href="https://www.keralatourism.org/howto/">How to?</a></li>
+            <li><a href="https://www.keralatourism.org/travel-tips/">Travel Tips</a></li>
+          </ul>
+        </div>
+        <div class="col-m-5 col-2">
+          <h3>Nature</h3>
+          <ul class="footer-menu">
+            <li><a href="https://www.keralatourism.org/destination/hills/">Hills</a></li>
+            <li><a href="https://www.keralatourism.org/destination/backwater/">Backwaters</a></li>
+            <li><a href="https://www.keralatourism.org/destination/beaches/">Beaches</a></li>
+            <li><a href="https://www.keralatourism.org/destination/wildlife/">Wildlife</a></li>
+            <li><a href="https://www.keralatourism.org/destination/waterfalls/">Waterfalls</a></li>
+          </ul>
+        </div>
+        <div  class="col-m-5 col-2">
+          <h3>Places</h3>
+          <ul class="footer-menu">
+            <li><a href="https://www.keralatourism.org/destination/munnar/202">Munnar</a></li>
+            <li><a href="https://www.keralatourism.org/destination/wayanad-district/373">Wayanad</a></li>
+            <li><a href="https://www.keralatourism.org/destination/kovalam-beach/236">Kovalam</a></li>
+            <li><a href="https://www.keralatourism.org/destination/periyar-tiger-reserve-idukki/192">Periyar</a></li>
+            <li><a href="https://www.keralatourism.org/destination/varkala-beach/328">Varkala</a></li>
+          </ul>
+        </div>
+        <div class="col-m-5 col-2">
+          <h3>Specialities</h3>
+          <ul class="footer-menu">
+            <li><a href="https://www.keralatourism.org/ayurveda/">Ayurveda</a></li>
+            <li><a href="https://www.keralatourism.org/monsoon/">Monsoon</a></li>
+            <li><a href="https://www.keralatourism.org/houseboat/">Houseboat</a></li>
+            <li><a href="https://www.keralatourism.org/kerala-food/">Kerala Food</a></li>
+            <li><a href="https://www.keralatourism.org/event/">Festivals</a></li>
+          </ul>
+        </div>
+        <div  class="col-m-5 col-2">
+          <h3>Videos/Photos</h3>
+          <ul class="footer-menu">
+            <li><a href="https://www.keralatourism.org/video-gallery/">Videos</a></li>
+            <li><a href="https://www.keralatourism.org/photo-gallery/">Photos</a></li>
+            <li><a href="https://www.keralatourism.org/virtual-reality-movies/">Virtual Reality</a></li>
+            <li><a href="https://www.keralatourism.org/highresolutionimages/">Royalty Free Photos</a></li>
+            <li><a href="https://www.keralatourism.org/wallpapers/">Wallpapers</a></li>
+          </ul>
+        </div>
+          </div>
+        </div>
+
+          <div class="col-m-7 col-12">
+          <h3 style="text-align:center;">Subscribe Our News Letter</h3>
+          <form>
+            <input type="text" placeholder="Your Email" style="width:200px;margin-left:480px;"><span><button type="submit" style="background-color: darkslateblue;color:white;height:40px;">Subscribe</button></span>
+
+          </form>
+          <h4><small style="margin-left:440px">For Business/Trade/Classifications and Tenders please visit</small></h4>
+          <h3><a href="#" style="text-decoration: none;color:black;text-align:center;margin-left:500px;">www.keralatourism.gov.in</a></h3>
+          </div>
+          
+        </div>
+       <div class="container">
+         <div class="col-m-12">
+            <div class="associates">
+              <a href="#"><img src="https://www.keralatourism.org/images/dtpc.png" title="District Tourism Promotion Council"></a>
+              <a href="#" rel="nofollow"  ><img src="https://www.keralatourism.org/images/ktdc.jpg" title="KTDC" style="width:58px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/brdc-logo.png" title="BRDC" style="width:150px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/sargaalaya-logo.png" title="Sargaalaya" style="width:83px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/sihmk.jpg" title="SIHM-K" style="width:69px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/responsible-tourism.jpg" title="Responsible Tourism" style="width:69px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/tourfed.jpg" title="Tourfed" style="width:93px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/kitts.jpg" title="KITTS" style="width:55px"></a>
+              <a href="#"><img src="https://www.keralatourism.org/images/adventurekeralatourism-logo.jpg" title="Adventure Tourism" style="width:78px"></a> 
+              <a href="#"><img src="https://www.keralatourism.org/images/muziris-logo.jpg" title="Muziris Heritage" style="width:78px"></a> 
+              <a href="#"><img src="https://www.keralatourism.org/images/ktil.jpg" title="KTIL" style="width:61px"></a> 
+              <a href="#"><img src="https://www.keralatourism.org/images/GKSF-logo.jpg" title="GKSF" style="width:40px"></a> 
+              <a href="#"><img src="https://www.keralatourism.org/images/vasantholsavam-logo.png" title="Vasantholsavam" style="width:100px"></a> 
+            </div>           
+         </div> 
+         </div>
+       </div> 
+<div class="container">
+  <div class="row">
+    <div class="col-m-12">
+      <div class="sub-head2">
+      <h3><small style="font-size: 80%">Toll free No: </small>1-800-425-4747, 1-800-111-363 <small style="font-size: 80%">(within India only)</small></h3>
+      Department of Tourism, Government of Kerala, Park View, Thiruvananthapuram, Kerala, India - 695 033<br>
+       Phone: +91 471 2321132, Fax: +91 471 2322279, E-mail: <a href="mailto:info@keralatourism.org" target="_blank">info@keralatourism.org</a>, <a href="mailto:deptour@keralatourism.org" target="_blank">deptour@keralatourism.org</a>. <br>
+       All rights reserved &copy; Kerala Tourism 2017. <a href="https://www.keralatourism.org/copyright">Copyright</a> | <a href="https://www.keralatourism.org/termofuse">Terms of Use</a>. Developed &amp; Maintained by Invis Multimedia. 
+      </div>
+      </div>
+      </div>
+
+</div>
+</body>
+</html>
